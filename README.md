@@ -19,6 +19,7 @@
 - eslint, prettier, babel
 
 ## 📗 학습 정리
+- [webpack, vue 설정](https://github.com/yejineee/vue-trello/blob/master/docs/webpack.md)
 
 ## 🏃‍♀️ 계획과 실행 
 ✅ 완료
@@ -27,7 +28,7 @@
 
 ### 21.04.30 금
 
-- vue, webpack 설정 후 로컬호스트 띄워보기
+- vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5)
 - prettier, eslint 설정하기
 - babel 설정하기
 - es module 사용할 수 있는지 확인해보고 안되면 바벨 설정하기
