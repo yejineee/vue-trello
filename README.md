@@ -21,18 +21,23 @@
 ## 📗 학습 정리
 - [webpack, vue 설정](https://github.com/yejineee/vue-trello/blob/master/docs/webpack.md)
 
+
 ## 🏃‍♀️ 계획과 실행 
-✅ 완료
-🌗 진행했으나 완료하지 못함
-⛔️ 진행하지 못함
 
-### 21.04.30 금
+- **21.04.30 금** 
+  - vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5) ✅ 
+  - prettier, eslint 설정하기 ⛔️
+  - babel 설정하기 ⛔️
+  - es module 사용할 수 있는지 확인해보고 안되면 바벨 설정하기 ⛔️
+  - 환경설정한 것 문서화해서 올리기
 
-- vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5)
-- prettier, eslint 설정하기
-- babel 설정하기
-- es module 사용할 수 있는지 확인해보고 안되면 바벨 설정하기
-- 환경설정한 것 문서화해서 올리기
+- **21.05.01 토** 
+  - prettier, eslint 설정하기 
+  - babel 설정하기 
+  - 기본 페이지 마크업
+  - 칼럼 추가하기 기능 
+  - 칼럼에 todo 추가하기 기능
+  - 환경설정한 것 문서화해서 올리기
 
 ## 🌳 브랜치 전략 
 - 브랜치 전략은 **GitHub flow**를 따른다.
