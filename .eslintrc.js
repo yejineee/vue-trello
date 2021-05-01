@@ -1,6 +1,10 @@
 module.exports = {
-  extends: ['airbnb-base', 'pretteir:prettier/recommended'],
-  plugins: 'import',
+  extends: [
+    'airbnb-base',
+    'plugin:vue/recommended',
+    'pretteir:prettier/recommended'
+  ],
+  plugins: ['vue', 'import'],
   env: {
     browser: true,
     node: true,
