@@ -75,7 +75,11 @@ ESLint 자체도 포맷팅의 기능이 있다. 그러나, prettier가 더 좋�
   eslint에서 서드파티 플러그인을 사용할 수 있다. `eslint-plugin` 접두사는 생략될 수 있다. 
   위에서 extend와 plugin의 차이에서 살펴보았듯이 플러그인에 추가한다고 해서 플러그인의 룰들이 적용되지는 않는다. 필요한 플러그인의 룰이 있다면, extends에 적용시키면 될 것 같다.
 
-
+  Vue.js의 공식 ESLint plugin은 `eslint-plugin-vue`이다. 
+  ```
+  npm install --save-dev eslint eslint-plugin-vue
+  ```
+  현재 이 프로젝트에는 vue.js version 2가 설치되어있으므로, extends에 'plugin:vue/recommended'
 
 - **language option**
   environment를 설정하는 것은 미리 지정된 전역 변수를 사용할 수 있게 한다. 이 플젝에서는 browser, node, es6, jest를 설정하고자 한다.
@@ -110,8 +114,12 @@ extends의 가장 마지막에 `"plugin:prettier/recommended"`를 추가하자. 
 
 ```js
 module.exports = {
-  extends: ['airbnb-base', 'pretteir:prettier/recommended'],
-  plugins: 'import',
+  extends: [
+    'airbnb-base',
+    'plugin:vue/recommended',
+    'pretteir:prettier/recommended'
+  ],
+  plugins: ['vue', 'import'],
   env: {
     browser: true,
     node: true,
