@@ -1,4 +1,4 @@
-# eslint, prettier, babel 환경 설정
+# eslint, prettier 환경 설정
 
 Vue-trello project에서 eslint와 prettier를 사용해서 일관된 코드 스타일을 맞추고자한다. 
 

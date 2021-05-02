@@ -20,10 +20,18 @@
 
 ## 📗 학습 정리
 - [webpack, vue 설정](https://github.com/yejineee/vue-trello/blob/master/docs/webpack.md)
+- [eslint, prettier 설정](https://github.com/yejineee/vue-trello/blob/master/docs/eslint-prettier.md)
 
+- Vue 공식문서 간단 정리
+  - [Vue Introduction](https://hackmd.io/cXf2Y39zQ-Kv8sqnYBi_zw)
+  - [Vue instance](https://hackmd.io/6N65rm0KTTGk_y_1QhfCeA)
+  - [Vue 템플릿 신택스](https://hackmd.io/a1iRCJuuT0-pDC52yjVP2w)
+  - [조건부렌더링, 리스트렌더링](https://hackmd.io/1XnTtI1_ShG5G0xnOx0eBg)
+  - [컴포넌트](https://hackmd.io/EfHf4_1jQdq09gp2lOkQ-w)
+  - [Runtime + Compiler vs Runtime-only](https://hackmd.io/5hF0zrqLSVS9lIYH_Za2Mw)
 
 ## 🏃‍♀️ 계획과 실행 
-
+~~지켜지지못할~~ 계획과 실행!
 - **21.04.30 금** 
   - vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5) ✅ 
   - prettier, eslint 설정하기 ⛔️
@@ -32,12 +40,18 @@
   - 환경설정한 것 문서화해서 올리기
 
 - **21.05.01 토** 
-  - prettier, eslint 설정하기 
-  - babel 설정하기 
-  - 기본 페이지 마크업
-  - 칼럼 추가하기 기능 
-  - 칼럼에 todo 추가하기 기능
+  - prettier, eslint 설정하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/6)
+  - babel 설정하기 ⛔️
+  - vue 공식문서 읽기(template 마지막부분 ~ 컴포넌트) 🌗
+  - 기본 페이지 마크업 ⛔️
+  - 칼럼 추가하기 기능  ⛔️
+  - 칼럼에 todo 추가하기 기능 ⛔️
   - 환경설정한 것 문서화해서 올리기
+
+- **21.05.02 일**
+  - vue 공식문서 읽고 정리 ✅ 
+  - 기본 마크업 ✅ 
+  - 칼럼 추가하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/9)
 
 ## 🌳 브랜치 전략 
 - 브랜치 전략은 **GitHub flow**를 따른다.
