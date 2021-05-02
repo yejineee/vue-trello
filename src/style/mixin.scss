@@ -1,0 +1,19 @@
+@mixin round-box{
+  @content;
+  border-radius: 2rem;
+}
+
+@mixin flex-center{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  @content;
+}
+
+@mixin column-base{
+  min-width: 20em;
+}
+
+@mixin column-title-base{
+  max-height: 4em;
+}
