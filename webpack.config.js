@@ -1,45 +1,49 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const { VueLoaderPlugin } = require("vue-loader");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'eval-source-map',
   plugins: [
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
-      template: "src/index.html",
-      hash: true,
+      template: 'src/index.html',
+      hash: true
     }),
-    ...(process.env.NODE_ENV === "production"
+    ...(process.env.NODE_ENV === 'production'
       ? [new MiniCssExtractPlugin({ filename: `[name].css` })]
-      : []),
+      : [])
   ],
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: "vue-loader",
+        loader: 'vue-loader',
+        options: {
+          extractCSS: true
+        }
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
-          process.env.NODE_ENV === "production"
+          process.env.NODE_ENV === 'production'
             ? MiniCssExtractPlugin.loader
             : // Creates `style` nodes from JS strings
-              "style-loader",
+              'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
-        ],
-      },
-    ],
+          'sass-loader'
+        ]
+      }
+    ]
   },
   optimization: {
     minimize: true,
@@ -47,13 +51,18 @@ module.exports = {
       new CssMinimizerPlugin({
         minimizerOptions: {
           preset: [
-            "default",
+            'default',
             {
-              discardComments: { removeAll: true },
-            },
-          ],
-        },
-      }),
-    ],
+              discardComments: { removeAll: true }
+            }
+          ]
+        }
+      })
+    ]
   },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src')
+    }
+  }
 };
