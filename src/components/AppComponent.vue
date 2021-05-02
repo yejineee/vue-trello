@@ -15,8 +15,3 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-#id {
-  flex: display;
-}
-</style>
