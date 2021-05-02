@@ -1,9 +1,22 @@
-// AppComponent.vue
 <template>
-    <h1>Hello from the</h1>
+  <div id="app">
+    <main-header></main-header>
+    <board></board>
+  </div>
 </template>
 <script>
-  export default {
+import Board from './Board.vue';
+import MainHeader from './MainHeader.vue';
 
+export default {
+  components: {
+    MainHeader,
+    Board
   }
+};
 </script>
+<style lang="scss">
+#id {
+  flex: display;
+}
+</style>
