@@ -10,7 +10,7 @@
 </template>
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
-import { FETCH_COLUMNS } from '../stores/column/constants';
+import { FETCH_COLUMNS } from 'src/stores/column/constants';
 import Column from './Column.vue';
 import ColumnForm from './ColumnForm.vue';
 
