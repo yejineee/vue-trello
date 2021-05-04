@@ -20,9 +20,7 @@ export default {
     ColumnForm
   },
   data() {
-    return {
-      columnList: [{ id: 1, title: 'todo' }]
-    };
+    return {};
   },
   computed: {
     ...mapState(['columns'])
@@ -31,9 +29,7 @@ export default {
     this.fetchColumns();
   },
   methods: {
-    onAddNewColumn(title) {
-      this.columnList.push({ id: `new-column-${title}`, title });
-    },
+    onAddNewColumn(title) {},
     ...mapActions({ fetchColumns: FETCH_COLUMNS })
   }
 };
