@@ -56,6 +56,14 @@
   - vue 공식문서 읽고 정리 ✅ 
   - 기본 마크업 ✅ 
   - 칼럼 추가하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/9)
+  
+- **21.05.04 화**
+  - vuex 학습 및 정리 (코어개념-state, getters, mutations, actions) ✅ 
+  - 서버에서 columns 데이터 가져와서 보여주기 - 비동기 액션 적용!
+  - 칼럼 생성으로 Store의 state 변경시키기
+  - 칼럼 이름 수정하기
+  - 유저 스토어 추가하여 스토어 모듈화하기 
+  - 지금까지 개발한 내용 정리하기
 
 ## 🌳 브랜치 전략 
 - 브랜치 전략은 **GitHub flow**를 따른다.
