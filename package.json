@@ -8,6 +8,7 @@
     "start": "webpack serve --mode=development --open"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "vue": "^2.6.11",
     "vuex": "^3.6.2"
   },
