@@ -30,6 +30,10 @@
   - [컴포넌트](https://hackmd.io/EfHf4_1jQdq09gp2lOkQ-w)
   - [Runtime + Compiler vs Runtime-only](https://hackmd.io/5hF0zrqLSVS9lIYH_Za2Mw)
 
+- Vuex 공식문서 정리
+  - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
+  - [Vuex 코어 개념 : Mutations, Actions](https://hackmd.io/mHGTeQOhSeiQMqpyvRSf0w)
+
 ## 🏃‍♀️ 계획과 실행 
 ~~지켜지지못할~~ 계획과 실행!
 - **21.04.30 금** 
