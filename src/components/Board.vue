@@ -10,6 +10,7 @@
 </template>
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
+import { FETCH_COLUMNS } from '../stores/column/constants';
 import Column from './Column.vue';
 import ColumnForm from './ColumnForm.vue';
 
@@ -26,10 +27,14 @@ export default {
   computed: {
     ...mapState(['columns'])
   },
+  created() {
+    this.fetchColumns();
+  },
   methods: {
     onAddNewColumn(title) {
       this.columnList.push({ id: `new-column-${title}`, title });
-    }
+    },
+    ...mapActions({ fetchColumns: FETCH_COLUMNS })
   }
 };
 </script>
