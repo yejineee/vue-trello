@@ -5,10 +5,12 @@
   </div>
 </template>
 <script>
+import store from '../stores/column/index';
 import Board from './Board.vue';
 import MainHeader from './MainHeader.vue';
 
 export default {
+  store,
   components: {
     MainHeader,
     Board
