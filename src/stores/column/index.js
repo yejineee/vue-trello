@@ -1,7 +1,12 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { getColumns } from 'src/apis/index';
-import { FETCH_COLUMNS, MUTATE_COLUMNS } from './constants';
+import { getColumns, createNewColumn } from 'src/apis/index';
+import {
+  CREATE_COLUMN,
+  FETCH_COLUMNS,
+  MUTATE_COLUMNS,
+  MUTATE_ADD_COLUMN
+} from './constants';
 
 Vue.use(Vuex);
 
@@ -28,11 +33,22 @@ const store = new Vuex.Store({
   mutations: {
     [MUTATE_COLUMNS](state, { data }) {
       state.columns = data;
+    },
+    [MUTATE_ADD_COLUMN](state, { newColumn }) {
+      state.columns = [...state.columns, newColumn];
     }
   },
   actions: {
     async [FETCH_COLUMNS]({ commit }) {
       commit(MUTATE_COLUMNS, { data: await getColumns() });
+    },
+    async [CREATE_COLUMN]({ commit }, title) {
+      const newColumn = await createNewColumn({
+        title,
+        createdAt: new Date(),
+        cards: []
+      });
+      commit(MUTATE_ADD_COLUMN, { newColumn });
     }
   }
 });
