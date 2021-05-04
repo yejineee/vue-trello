@@ -1,7 +1,7 @@
 <template>
   <div id="board">
     <column
-      v-for="column in columnList"
+      v-for="column in columns"
       :key="column.id"
       :title="column.title"
     ></column>
@@ -9,6 +9,7 @@
   </div>
 </template>
 <script>
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 import Column from './Column.vue';
 import ColumnForm from './ColumnForm.vue';
 
@@ -21,6 +22,9 @@ export default {
     return {
       columnList: [{ id: 1, title: 'todo' }]
     };
+  },
+  computed: {
+    ...mapState(['columns'])
   },
   methods: {
     onAddNewColumn(title) {
