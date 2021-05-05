@@ -77,7 +77,8 @@ export default {
     size: 1.2em;
     weight: 500;
   }
-  background: $column-back;
+  background: $darkgray;
+  color: $white;
 }
 
 #column__title-edit-form {
