@@ -3,7 +3,7 @@
     <column
       v-for="column in columns"
       :key="column.id"
-      :title="column.title"
+      :column="column"
     ></column>
     <column-form @add-new-column="onAddNewColumn"></column-form>
   </div>
@@ -39,12 +39,10 @@ export default {
 <style lang="scss">
 #board {
   display: flex;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 95vh;
+  padding: 1rem;
 
   overflow-x: scroll;
-  border: 1px solid red;
 }
 </style>

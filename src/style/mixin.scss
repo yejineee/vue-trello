@@ -1,6 +1,6 @@
 @mixin round-box{
   @content;
-  border-radius: 4%;
+  border-radius: 6px;
 }
 
 @mixin flex-center{
