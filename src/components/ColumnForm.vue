@@ -79,18 +79,18 @@ $padding: 0.5rem 0;
 }
 
 #column-form {
-  @include round-box;
-  @include column-base;
   margin-left: 0.5rem;
 }
 
 #column-form__button {
+  @include flex-center;
   @include round-box;
+  @include column-title-base;
+  @include column-base;
 
   width: 100%;
   border: lightgray;
-  padding: $padding;
-  background: color.scale($column-back, $lightness: 50%);
+  background: rgba(255, 255, 255, 0.3);
   font: {
     size: 1.2em;
     weight: 500;
