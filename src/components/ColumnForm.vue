@@ -1,6 +1,10 @@
 <template>
   <div id="column-form">
-    <form v-if="showForm" @submit.prevent="submitNewTitle">
+    <form
+      v-if="showForm"
+      id="create-form__container"
+      @submit.prevent="submitNewTitle"
+    >
       <input
         id="column-form__input"
         v-model.trim="title"
@@ -8,17 +12,19 @@
         :minlength="minTitle"
         :maxlength="maxTitle"
       />
-      <button
-        class="column-form__submit"
-        :class="{ active: isValidTitle }"
-        type="button"
-        @click="submitNewTitle"
-      >
-        Add List
-      </button>
-      <button id="column-form__cancel" type="button" @click="toggleShowForm">
-        X
-      </button>
+      <div id="column-form-control__container">
+        <button
+          class="column-form__submit"
+          :class="{ active: isValidTitle }"
+          type="button"
+          @click="submitNewTitle"
+        >
+          Add List
+        </button>
+        <button id="column-form__cancel" type="button" @click="toggleShowForm">
+          X
+        </button>
+      </div>
     </form>
     <button v-else id="column-form__button" @click="toggleShowForm">
       + Add another list
@@ -67,29 +73,24 @@ export default {
 @use "sass:color";
 @import 'src/style/mixin.scss';
 @import 'src/style/variable.scss';
-$padding: 0.5rem 0;
-
-.column-form__submit {
-  color: gray;
-}
-
-.active {
-  background: green;
-  color: white;
-  &:hover {
-    background: color.scale(green, $lightness: 10%);
-  }
-}
 
 #column-form {
+  @include column-base;
   margin-left: 0.5rem;
+}
+
+#create-form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2em;
+  background: rgba(255, 255, 255, 0.3);
+  height: $column-title-height * 3;
 }
 
 #column-form__button {
   @include flex-center;
   @include round-box;
   @include column-title-base;
-  @include column-base;
 
   width: 100%;
   border: lightgray;
@@ -98,13 +99,39 @@ $padding: 0.5rem 0;
     size: 1.2em;
     weight: 500;
   }
-
   cursor: pointer;
 }
 #column-form__input {
-  @include column-title-base;
-  @include column-base;
-  width: 100%;
-  padding: $padding;
+  flex: 1 1 0;
+}
+
+#column-form-control__container {
+  display: flex;
+  flex: 1 1 0;
+}
+.column-form__submit {
+  @include round-box;
+  color: darkgray;
+  cursor: not-allowed;
+  width: 70%;
+}
+
+#column-form__cancel {
+  @include round-box;
+  width: 30%;
+  background: $darkgray;
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  $active-color: #33a148;
+  cursor: pointer;
+  background: $active-color;
+  color: white;
+  font-weight: 500;
+  &:hover {
+    background: color.scale($active-color, $lightness: 10%);
+  }
 }
 </style>
