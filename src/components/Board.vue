@@ -5,12 +5,12 @@
       :key="column.id"
       :column="column"
     ></column>
-    <column-form @add-new-column="onAddNewColumn"></column-form>
+    <column-form></column-form>
   </div>
 </template>
 <script>
-import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
-import { FETCH_COLUMNS, CREATE_COLUMN } from 'src/stores/column/constants';
+import { mapState, mapActions } from 'vuex';
+import { FETCH_COLUMNS } from 'src/stores/column/constants';
 import Column from './Column.vue';
 import ColumnForm from './ColumnForm.vue';
 
@@ -29,10 +29,7 @@ export default {
     this.fetchColumns();
   },
   methods: {
-    onAddNewColumn(title) {
-      this.addNewColumn(title);
-    },
-    ...mapActions({ fetchColumns: FETCH_COLUMNS, addNewColumn: CREATE_COLUMN })
+    ...mapActions({ fetchColumns: FETCH_COLUMNS })
   }
 };
 </script>

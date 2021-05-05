@@ -32,6 +32,8 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex';
+import { CREATE_COLUMN } from 'src/stores/column/constants';
 import { MAX_TITLE_LENGTH, MIN_TITLE_LENGTH } from '../constants/title';
 
 export default {
@@ -59,13 +61,14 @@ export default {
       if (!this.isValidTitle) {
         return;
       }
-      this.$emit('add-new-column', this.title);
+      this.addNewColumn(this.title);
       this.resetData();
     },
     resetData() {
       this.showForm = false;
       this.title = '';
-    }
+    },
+    ...mapActions({ addNewColumn: CREATE_COLUMN })
   }
 };
 </script>
