@@ -41,13 +41,24 @@ export default {
       maxTitle: MAX_TITLE_LENGTH
     };
   },
+  computed: {
+    isValidTitle() {
+      return (
+        this.updatedTitle.length >= this.minTitle &&
+        this.updatedTitle.length <= this.maxTitle
+      );
+    }
+  },
   methods: {
     toggleEditTitleForm() {
       this.showEditForm = this.showEditForm !== true;
     },
     submitUpdatedTitle() {
-      this.updateTitle({ title: this.updatedTitle, id: this.column.id });
       this.showEditForm = false;
+      if (!this.isValidTitle) {
+        return;
+      }
+      this.updateTitle({ title: this.updatedTitle, id: this.column.id });
     },
     ...mapActions({ updateTitle: UPDATE_COLUMN })
   }
