@@ -1,6 +1,6 @@
 <template>
   <div id="column-form">
-    <form v-if="showForm">
+    <form v-if="showForm" @submit.prevent="submitNewTitle">
       <input
         id="column-form__input"
         v-model.trim="title"
