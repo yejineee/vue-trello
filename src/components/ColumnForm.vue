@@ -50,8 +50,11 @@ export default {
       this.showForm = this.showForm !== true;
     },
     submitNewTitle() {
-      this.$emit('add-new-column', this.title);
       this.resetData();
+      if (!this.isValidTitle) {
+        return;
+      }
+      this.$emit('add-new-column', this.title);
     },
     resetData() {
       this.showForm = false;
