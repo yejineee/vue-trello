@@ -23,6 +23,9 @@ export default {
   @include round-box;
   @include column-base;
   background: $column-back;
+  & + & {
+    margin-left: 0.5rem;
+  }
 }
 .column__title {
   @include round-box;

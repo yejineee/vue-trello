@@ -81,6 +81,7 @@ $padding: 0.5rem 0;
 #column-form {
   @include round-box;
   @include column-base;
+  margin-left: 0.5rem;
 }
 
 #column-form__button {
