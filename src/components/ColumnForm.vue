@@ -125,6 +125,9 @@ export default {
   background: $darkgray;
   color: white;
   cursor: pointer;
+  &:hover {
+    background: color.scale($darkgray, $lightness: 14%);
+  }
 }
 
 .active {
