@@ -83,11 +83,24 @@ export default {
 }
 
 #create-form__container {
+  @include round-box;
   display: flex;
   flex-direction: column;
   padding: 0.2em;
   background: rgba(255, 255, 255, 0.3);
   height: $column-title-height * 3;
+
+  animation-name: show-form;
+  animation-duration: 0.2s;
+}
+
+@keyframes show-form {
+  from {
+    height: $column-title-height;
+  }
+  to {
+    height: $column-title-height * 3;
+  }
 }
 
 #column-form__button {
