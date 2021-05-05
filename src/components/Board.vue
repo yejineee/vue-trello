@@ -3,7 +3,7 @@
     <column
       v-for="column in columns"
       :key="column.id"
-      :title="column.title"
+      :column="column"
     ></column>
     <column-form @add-new-column="onAddNewColumn"></column-form>
   </div>

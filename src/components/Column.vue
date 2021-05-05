@@ -8,9 +8,17 @@
 <script>
 export default {
   props: {
-    title: {
-      type: String,
-      required: true
+    column: {
+      type: Object,
+      required: true,
+      validator({ id, title, createdAt, cards }) {
+        return (
+          typeof id === 'string' &&
+          typeof title === 'string' &&
+          (typeof createdAt === 'string' || createdAt instanceof Date) &&
+          cards instanceof Array
+        );
+      }
     }
   }
 };
