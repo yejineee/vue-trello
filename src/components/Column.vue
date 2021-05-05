@@ -1,13 +1,12 @@
 <template>
   <div class="column">
-    <form v-if="showEditForm" @submit.prevent="submitUpdatedTitle">
-      <input
-        id="column__title-edit-form"
-        v-model="updatedTitle"
-        :minlength="minTitle"
-        :maxlength="maxTitle"
-      />
-    </form>
+    <ColumnEditForm
+      v-if="showEditForm"
+      :id="column.id"
+      :title="column.title"
+      @update-title="toggleEditTitleForm"
+    >
+    </ColumnEditForm>
     <div v-else class="column__title" @click="toggleEditTitleForm">
       {{ column.title }}
     </div>
@@ -15,10 +14,12 @@
 </template>
 <script>
 import { MAX_TITLE_LENGTH, MIN_TITLE_LENGTH } from 'src/constants/title';
-import { mapActions } from 'vuex';
-import { UPDATE_COLUMN } from 'src/stores/column/constants';
+import ColumnEditForm from './ColumnEditForm.vue';
 
 export default {
+  components: {
+    ColumnEditForm
+  },
   props: {
     column: {
       type: Object,
@@ -52,15 +53,7 @@ export default {
   methods: {
     toggleEditTitleForm() {
       this.showEditForm = this.showEditForm !== true;
-    },
-    submitUpdatedTitle() {
-      this.showEditForm = false;
-      if (!this.isValidTitle) {
-        return;
-      }
-      this.updateTitle({ title: this.updatedTitle, id: this.column.id });
-    },
-    ...mapActions({ updateTitle: UPDATE_COLUMN })
+    }
   }
 };
 </script>
