@@ -17,7 +17,7 @@
           class="column-form__submit"
           :class="{ active: isValidTitle }"
           type="button"
-          @click="submitNewTitle"
+          @click.prevent="submitNewTitle"
         >
           Add List
         </button>
@@ -56,11 +56,11 @@ export default {
       this.showForm = this.showForm !== true;
     },
     submitNewTitle() {
-      this.resetData();
       if (!this.isValidTitle) {
         return;
       }
       this.$emit('add-new-column', this.title);
+      this.resetData();
     },
     resetData() {
       this.showForm = false;
