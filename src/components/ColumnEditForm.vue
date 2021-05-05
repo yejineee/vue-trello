@@ -1,7 +1,7 @@
 <template>
-  <form @submit.prevent="submitUpdatedTitle">
+  <form id="column__title-edit-form" @submit.prevent="submitUpdatedTitle">
     <input
-      id="column__title-edit-form"
+      id="column__title-edit-input"
       v-model="updatedTitle"
       :minlength="minTitle"
       :maxlength="maxTitle"
@@ -66,13 +66,13 @@ export default {
 </script>
 <style lang="scss">
 @import 'src/style/mixin.scss';
+@import 'src/style/variable.scss';
 
 #column__title-edit-form {
-  @include column-title-base;
-  @include column-base;
   display: flex;
-  margin: auto;
-  width: 90%;
-  padding: 0.5rem 0;
+}
+#column__title-edit-input {
+  height: $column-title-height;
+  flex: 1 1 0;
 }
 </style>
