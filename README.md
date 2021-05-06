@@ -34,44 +34,51 @@
   - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
   - [Vuex 코어 개념 : Mutations, Actions](https://hackmd.io/mHGTeQOhSeiQMqpyvRSf0w)
 
+
+
 ## 🏃‍♀️ 계획과 실행 
-~~지켜지지못할~~ 계획과 실행!
-- **21.04.30 금** 
-  - vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5) ✅ 
-  - prettier, eslint 설정하기 ⛔️
-  - babel 설정하기 ⛔️
-  - es module 사용할 수 있는지 확인해보고 안되면 바벨 설정하기 ⛔️
-  - 환경설정한 것 문서화해서 올리기
+<details>
+  <summary>날짜별 계획과 실행</summary>
 
-- **21.05.01 토** 
-  - prettier, eslint 설정하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/6)
-  - babel 설정하기 ⛔️
-  - vue 공식문서 읽기(template 마지막부분 ~ 컴포넌트) 🌗
-  - 기본 페이지 마크업 ⛔️
-  - 칼럼 추가하기 기능  ⛔️
-  - 칼럼에 todo 추가하기 기능 ⛔️
-  - 환경설정한 것 문서화해서 올리기
+  - **21.04.30 금** 
+    - vue, webpack 설정 후 로컬호스트 띄워보기 - [PR](https://github.com/yejineee/vue-trello/pull/5) ✅ 
+    - prettier, eslint 설정하기 ⛔️
+    - babel 설정하기 ⛔️
+    - es module 사용할 수 있는지 확인해보고 안되면 바벨 설정하기 ⛔️
+    - 환경설정한 것 문서화해서 올리기
 
-- **21.05.02 일**
-  - vue 공식문서 읽고 정리 ✅ 
-  - 기본 마크업 ✅ 
-  - 칼럼 추가하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/9)
-  
-- **21.05.04 화**
-  - vuex 학습 및 정리 (코어개념-state, getters, mutations, actions) ✅ 
-  - 서버에서 columns 데이터 가져와서 보여주기 - 비동기 액션 적용! ✅ 
-  - 칼럼 생성으로 Store의 state 변경시키기 ✅ 
-  - 칼럼 이름 수정하기 ⛔️
-  - 유저 스토어 추가하여 스토어 모듈화하기 ⛔️
-  - 지금까지 개발한 내용 정리하기 ⛔️
+  - **21.05.01 토** 
+    - prettier, eslint 설정하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/6)
+    - babel 설정하기 ⛔️
+    - vue 공식문서 읽기(template 마지막부분 ~ 컴포넌트) 🌗
+    - 기본 페이지 마크업 ⛔️
+    - 칼럼 추가하기 기능  ⛔️
+    - 칼럼에 todo 추가하기 기능 ⛔️
+    - 환경설정한 것 문서화해서 올리기
+  - **21.05.02 일**
+    - vue 공식문서 읽고 정리 ✅ 
+    - 기본 마크업 ✅ 
+    - 칼럼 추가하기 ✅ - [PR](https://github.com/yejineee/vue-trello/pull/9)
+    
+  - **21.05.04 화**
+    - vuex 학습 및 정리 (코어개념-state, getters, mutations, actions) ✅ 
+    - 서버에서 columns 데이터 가져와서 보여주기 - 비동기 액션 적용! ✅ 
+    - 칼럼 생성으로 Store의 state 변경시키기 ✅ 
+    - 칼럼 이름 수정하기 ⛔️
+    - 유저 스토어 추가하여 스토어 모듈화하기 ⛔️
+    - 지금까지 개발한 내용 정리하기 ⛔️
 
-- **21.05.05 수**
-  - 칼럼 이름 수정하기 
-  - 유저 스토어 추가하여 스토어 모듈화하기 
-  - 카드 생성하기
-  - 카드 수정하기 
-  - 메인 페이지 마크업 다시 정비하기
-  - 120 퍼센트로 하기. 정성을 다하기 !
+  - **21.05.05 수**
+    - 칼럼 이름 수정하기 ✅ 
+    - 메인 페이지 마크업 다시 정비하기 ✅ 
+
+
+</details>
+
+
+
+
+
 ## 🌳 브랜치 전략 
 - 브랜치 전략은 **GitHub flow**를 따른다.
   혼자 하는 프로젝트라서, 복잡한 브랜치 전략을 가져갈 이유가 없다고 생각한다.
