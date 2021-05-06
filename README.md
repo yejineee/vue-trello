@@ -33,6 +33,7 @@
 - Vuex 공식문서 정리
   - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
   - [Vuex 코어 개념 : Mutations, Actions](https://hackmd.io/mHGTeQOhSeiQMqpyvRSf0w)
+  - [Vuex 코어 개념 : Modules](https://hackmd.io/zJqGEpn1SCeukNGa53OeUQ?both)
 
 
 
