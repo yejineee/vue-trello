@@ -1,4 +1,5 @@
 const userModule = {
+  namespaced: true,
   state: () => ({
     id: null,
     name: null

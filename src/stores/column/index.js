@@ -9,9 +9,10 @@ import {
 } from './constants';
 
 const columnModule = {
-  state: {
+  namespaced: true,
+  state: () => ({
     columns: []
-  },
+  }),
   mutations: {
     [MUTATE_COLUMNS](state, { data }) {
       state.columns = data;
