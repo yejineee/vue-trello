@@ -12,7 +12,7 @@
 <script>
 import { MAX_TITLE_LENGTH, MIN_TITLE_LENGTH } from 'src/constants/title';
 import { mapActions } from 'vuex';
-import { UPDATE_COLUMN } from 'src/stores/column/constants';
+import { UPDATE_COLUMN, COLUMN_STORE_NAME } from 'src/stores/column/constants';
 
 export default {
   props: {
@@ -60,7 +60,7 @@ export default {
       }
       this.updateTitle({ title: this.updatedTitle, id: this.id });
     },
-    ...mapActions({ updateTitle: UPDATE_COLUMN })
+    ...mapActions(COLUMN_STORE_NAME, { updateTitle: UPDATE_COLUMN })
   }
 };
 </script>

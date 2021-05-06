@@ -10,7 +10,7 @@
 </template>
 <script>
 import { mapState, mapActions } from 'vuex';
-import { FETCH_COLUMNS } from 'src/stores/column/constants';
+import { FETCH_COLUMNS, COLUMN_STORE_NAME } from 'src/stores/column/constants';
 import Column from './Column.vue';
 import ColumnForm from './ColumnForm.vue';
 
@@ -23,13 +23,13 @@ export default {
     return {};
   },
   computed: {
-    ...mapState(['columns'])
+    ...mapState(COLUMN_STORE_NAME, ['columns'])
   },
   created() {
     this.fetchColumns();
   },
   methods: {
-    ...mapActions({ fetchColumns: FETCH_COLUMNS })
+    ...mapActions(COLUMN_STORE_NAME, { fetchColumns: FETCH_COLUMNS })
   }
 };
 </script>
