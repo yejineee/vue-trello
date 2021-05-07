@@ -4,11 +4,15 @@
   </header>
 </template>
 <script>
+import { USER_STORE_NAME } from 'src/stores/user/constants';
+import { mapState } from 'vuex';
+
 export default {
-  data() {
-    return {
-      title: "Lillie's Trello"
-    };
+  computed: {
+    title() {
+      return this.name ? `${this.name}'s Trello` : '';
+    },
+    ...mapState(USER_STORE_NAME, ['name'])
   }
 };
 </script>

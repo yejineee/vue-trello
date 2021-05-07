@@ -1,3 +1,4 @@
+export const COLUMN_STORE_NAME = 'column';
 // actions
 export const FETCH_COLUMNS = 'FETCH_COLUMNS';
 export const CREATE_COLUMN = 'CREATE_COLUMN';

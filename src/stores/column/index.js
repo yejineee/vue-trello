@@ -1,5 +1,3 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
 import { getColumns, createNewColumn, updateColumnTitle } from 'src/apis/index';
 import {
   CREATE_COLUMN,
@@ -10,28 +8,11 @@ import {
   MUTATE_COLUMN_NAME
 } from './constants';
 
-Vue.use(Vuex);
-
-/*
-columns: [{
-  id: string,
-  title: string,
-  createdAt: string,
-  cards: [
-    {
-      id: string,
-      title: string,
-      description: string,
-      createdAt: string,
-      authorId: string,
-    }
-  ]
-}]
-*/
-const store = new Vuex.Store({
-  state: {
+const columnModule = {
+  namespaced: true,
+  state: () => ({
     columns: []
-  },
+  }),
   mutations: {
     [MUTATE_COLUMNS](state, { data }) {
       state.columns = data;
@@ -69,6 +50,6 @@ const store = new Vuex.Store({
       return state.columns.findIndex(({ id }) => id === targetId);
     }
   }
-});
+};
 
-export default store;
+export default columnModule;

@@ -5,15 +5,21 @@
   </div>
 </template>
 <script>
-import store from '../stores/column/index';
+import { mapActions } from 'vuex';
+import { FETCH_USER, USER_STORE_NAME } from 'src/stores/user/constants';
 import Board from './Board.vue';
 import MainHeader from './MainHeader.vue';
 
 export default {
-  store,
   components: {
     MainHeader,
     Board
+  },
+  created() {
+    this.fetchUser();
+  },
+  methods: {
+    ...mapActions(USER_STORE_NAME, { fetchUser: FETCH_USER })
   }
 };
 </script>

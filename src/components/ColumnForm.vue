@@ -33,7 +33,7 @@
 </template>
 <script>
 import { mapActions } from 'vuex';
-import { CREATE_COLUMN } from 'src/stores/column/constants';
+import { CREATE_COLUMN, COLUMN_STORE_NAME } from 'src/stores/column/constants';
 import { MAX_TITLE_LENGTH, MIN_TITLE_LENGTH } from '../constants/title';
 
 export default {
@@ -68,7 +68,7 @@ export default {
       this.showForm = false;
       this.title = '';
     },
-    ...mapActions({ addNewColumn: CREATE_COLUMN })
+    ...mapActions(COLUMN_STORE_NAME, { addNewColumn: CREATE_COLUMN })
   }
 };
 </script>
