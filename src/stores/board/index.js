@@ -1,5 +1,5 @@
 import { getBoards } from 'src/apis/index';
-import { FETCH_BOARDS, MUTATE_BOARDS } from './constants';
+import { FETCH_BOARDS, MUTATE_BOARDS, boardList } from './constants';
 
 const boardModule = {
   namespaced: true,
@@ -17,7 +17,17 @@ const boardModule = {
       commit(MUTATE_BOARDS, { boards });
     }
   },
-  getters: {}
+  getters: {
+    [boardList](state) {
+      if (state.boards === null) {
+        return [];
+      }
+      return Object.values(state.boards).map(({ id, title }) => ({
+        id,
+        title
+      }));
+    }
+  }
 };
 
 export default boardModule;
