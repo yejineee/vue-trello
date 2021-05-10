@@ -1,15 +1,7 @@
 {
-  "users":{
-    "wejingd": {
-      "id":"wejingd",
-      "name":"Lillie",
-      "boards":["id3"]
-    },
-    "kdskjfk": {
-      "id":"kdskjfk",
-      "name":"Yejin",
-      "boards":["id1", "id2", "id4", "id5"]
-    }
+  "user":{
+    "id":"wejingd",
+    "name":"Lillie"
   },
   "boards":{
     "id1":{
@@ -26,7 +18,7 @@
               "title":"할일의 첫번째 title",
               "description":"할일의 첫번째 description",
               "createdAt":"Mon May 03 2021 11:20:42 GMT+0900 (대한민국 표준시)",
-              "authorId":"kdskjfk"
+              "authorId":"wejingd"
             }
           ]
         }
@@ -46,7 +38,7 @@
               "title":"할일의 첫번째 title",
               "description":"할일의 첫번째 description",
               "createdAt":"Mon May 06 2021 11:20:42 GMT+0900 (대한민국 표준시)",
-              "authorId":"kdskjfk"
+              "authorId":"wejingd"
             }
           ]
         }
@@ -86,7 +78,7 @@
               "title":"할일의 첫번째 title",
               "description":"할일의 첫번째 description",
               "createdAt":"Mon May 03 2021 11:20:42 GMT+0900 (대한민국 표준시)",
-              "authorId":"kdskjfk"
+              "authorId":"wejingd"
             }
           ]
         }
@@ -106,7 +98,7 @@
               "title":"할일의 첫번째 title",
               "description":"할일의 첫번째 description",
               "createdAt":"Mon May 03 2021 11:20:42 GMT+0900 (대한민국 표준시)",
-              "authorId":"kdskjfk"
+              "authorId":"wejingd"
             }
           ]
         }
