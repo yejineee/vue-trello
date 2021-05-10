@@ -40,7 +40,10 @@
 - vue-router
   - [vue-router](https://hackmd.io/u3H7cdiaScyXPiAKhNxLHQ?view)
 
-
+- 개발 노트
+  - [엔터가 눌렸을 때, 타이틀 수정하기](https://github.com/yejineee/vue-trello/issues/23)
+  - [props로 객체가 전달될 때, 타입 체크를 더 확실히하는 방법은 없을까](https://github.com/yejineee/vue-trello/issues/25)
+  - [<타이틀 수정 바깥을 클릭했을 때, 수정폼 닫히게 하기>까지의 과정](https://github.com/yejineee/vue-trello/issues/27)
 
 ## 🏃‍♀️ 계획과 실행 
 <details>
