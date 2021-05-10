@@ -7,8 +7,8 @@
 <script>
 import { mapActions } from 'vuex';
 import { FETCH_USER, USER_STORE_NAME } from 'src/stores/user/constants';
-import Board from './Board.vue';
-import MainHeader from './MainHeader.vue';
+import Board from '../components/Board.vue';
+import MainHeader from '../components/MainHeader.vue';
 
 export default {
   components: {

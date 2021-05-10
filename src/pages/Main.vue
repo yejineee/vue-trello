@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Login Page</h1>
-    <router-link to="/boards">boards</router-link>
+    Main
   </div>
 </template>
 <script>
