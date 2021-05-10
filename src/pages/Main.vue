@@ -3,12 +3,18 @@
     <h1 id="main__title">
       Lillie's Trello
     </h1>
-    <div id="main__boards-list"></div>
+    <div id="main__boards-list">
+      <board-list></board-list>
+    </div>
   </div>
 </template>
 <script>
+import BoardList from 'src/components/BoardList.vue';
+
 export default {
-  components: {},
+  components: {
+    BoardList
+  },
   props: {},
   data() {
     return {};
