@@ -2,11 +2,13 @@
   "users":{
     "wejingd": {
       "id":"wejingd",
-      "name":"Lillie"
+      "name":"Lillie",
+      "boards":["id3"]
     },
     "kdskjfk": {
       "id":"kdskjfk",
-      "name":"Yejin"
+      "name":"Yejin",
+      "boards":["id1", "id2", "id4", "id5"]
     }
   },
   "boards":{
