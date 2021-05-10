@@ -14,13 +14,7 @@ import BoardList from 'src/components/BoardList.vue';
 export default {
   components: {
     BoardList
-  },
-  props: {},
-  data() {
-    return {};
-  },
-  computed: {},
-  methods: {}
+  }
 };
 </script>
 <style lang="scss">
