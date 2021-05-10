@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul id="board-list">
     <board-card
       v-for="board in boardList"
       :key="board.id"
@@ -34,20 +34,8 @@ export default {
 <style lang="scss">
 @import 'src/style/mixin.scss';
 
-#main {
+#board-list {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-#main__title {
-  @include flex-center;
-  flex: 2 1 0;
-  font: {
-    weight: 600;
-    size: 10rem;
-  }
-}
-#main__boards-list {
-  flex: 1 1 0;
+  padding: 2rem;
 }
 </style>
