@@ -1,9 +1,11 @@
 <template>
-  <li class="board-card">
+  <li class="board-card" @click="moveToBoardPage">
     <div class="board-card__title">{{ board.title }}</div>
   </li>
 </template>
 <script>
+import { BOARD_ROUTE } from 'src/router';
+
 export default {
   props: {
     board: {
@@ -12,6 +14,14 @@ export default {
       validator({ id, title }) {
         return typeof id === 'string' && typeof title === 'string';
       }
+    }
+  },
+  methods: {
+    moveToBoardPage() {
+      this.$router.push({
+        name: BOARD_ROUTE,
+        params: { boardId: this.board.id }
+      });
     }
   }
 };
