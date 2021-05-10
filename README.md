@@ -21,19 +21,24 @@
 ## 📗 학습 정리
 - [webpack, vue 설정](https://github.com/yejineee/vue-trello/blob/master/docs/webpack.md)
 - [eslint, prettier 설정](https://github.com/yejineee/vue-trello/blob/master/docs/eslint-prettier.md)
+- [CSR vs SSR](https://hackmd.io/KQkXXyeDSBeNR8znd2Ok9Q)
 
-- Vue 공식문서 간단 정리
+- Vue 
   - [Vue Introduction](https://hackmd.io/cXf2Y39zQ-Kv8sqnYBi_zw)
   - [Vue instance](https://hackmd.io/6N65rm0KTTGk_y_1QhfCeA)
   - [Vue 템플릿 신택스](https://hackmd.io/a1iRCJuuT0-pDC52yjVP2w)
   - [조건부렌더링, 리스트렌더링](https://hackmd.io/1XnTtI1_ShG5G0xnOx0eBg)
   - [컴포넌트](https://hackmd.io/EfHf4_1jQdq09gp2lOkQ-w)
   - [Runtime + Compiler vs Runtime-only](https://hackmd.io/5hF0zrqLSVS9lIYH_Za2Mw)
+  - [Vue Lifecycle & Lifecycle Method](https://hackmd.io/quNH36I6THW43zD_Uck6ow)
 
-- Vuex 공식문서 정리
+- Vuex 
   - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
   - [Vuex 코어 개념 : Mutations, Actions](https://hackmd.io/mHGTeQOhSeiQMqpyvRSf0w)
   - [Vuex 코어 개념 : Modules](https://hackmd.io/zJqGEpn1SCeukNGa53OeUQ?both)
+
+- vue-router
+  - [vue-router](https://hackmd.io/u3H7cdiaScyXPiAKhNxLHQ?view)
 
 
 
@@ -73,7 +78,9 @@
     - 칼럼 이름 수정하기 ✅ 
     - 메인 페이지 마크업 다시 정비하기 ✅ 
 
-
+  -  **21.05.09 토**
+     -  vue-router 학습하기 ✅ 
+     -  라우팅 적용하기 ✅ 
 </details>
 
 
