@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const instance = axios.create();
+const instance = axios.create({
+  baseURL: 'https://my-json-server.typicode.com/yejineee/vue-trello'
+});
 
 instance.interceptors.request.use(
   config => config,
