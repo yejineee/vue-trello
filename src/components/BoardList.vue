@@ -1,27 +1,23 @@
 <template>
   <ul id="board-list">
     <board-card
-      v-for="board in boardList"
+      v-for="board in boards"
       :key="board.id"
       :board="board"
     ></board-card>
   </ul>
 </template>
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapActions, mapState } from 'vuex';
 import BoardCard from 'src/components/BoardCard.vue';
-import {
-  BOARD_STORE_NAME,
-  FETCH_BOARDS,
-  boardList
-} from 'src/stores/board/constants';
+import { BOARD_STORE_NAME, FETCH_BOARDS } from 'src/stores/board/constants';
 
 export default {
   components: {
     BoardCard
   },
   computed: {
-    ...mapGetters(BOARD_STORE_NAME, [boardList])
+    ...mapState(BOARD_STORE_NAME, ['boards'])
   },
   created() {
     this.fetchBoards();
