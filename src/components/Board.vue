@@ -26,7 +26,8 @@ export default {
     ...mapState(COLUMN_STORE_NAME, ['columns'])
   },
   created() {
-    this.fetchColumns();
+    const { boardId } = this.$route.params;
+    this.fetchColumns({ boardId });
   },
   methods: {
     ...mapActions(COLUMN_STORE_NAME, { fetchColumns: FETCH_COLUMNS })

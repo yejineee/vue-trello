@@ -1,8 +1,8 @@
 import axios from 'src/settings/axios';
 import { ALL_COLUMNS_URL, USER_URL, BOARDS_URL } from './urls';
 
-export const getColumns = async () => {
-  return axios.get(ALL_COLUMNS_URL);
+export const getColumns = async id => {
+  return axios.get(`${BOARDS_URL}/${id}`);
 };
 
 export const createNewColumn = async columnData => {
