@@ -18,13 +18,22 @@
 - webpack
 - eslint, prettier, babel
 
+## 💻  개발 노트
+- [<엔터가 눌렸을 때, 타이틀 수정하기>에서의 문제와 해결, 리팩토링](https://github.com/yejineee/vue-trello/issues/23)
+- [props로 객체가 전달될 때, 타입 체크를 더 확실히하는 방법은 없을까](https://github.com/yejineee/vue-trello/issues/25)
+- [<타이틀 수정 바깥을 클릭했을 때, 수정폼 닫히게 하기>까지의 과정](https://github.com/yejineee/vue-trello/issues/27)
+- [window.addEventListener와 document.addEventListener의 차이](https://github.com/yejineee/vue-trello/issues/37)
+- [동적으로 url의 boardId가 변경됨에 따라 데이터 fetch해오기](https://github.com/yejineee/vue-trello/issues/49)
+
+
+
 ## 📗 학습 정리
 - [webpack, vue 설정](https://github.com/yejineee/vue-trello/blob/master/docs/webpack.md)
 - [eslint, prettier 설정](https://github.com/yejineee/vue-trello/blob/master/docs/eslint-prettier.md)
 - [CSR vs SSR](https://hackmd.io/KQkXXyeDSBeNR8znd2Ok9Q)
 - [HTML5, CSS3, Sass](https://hackmd.io/CsQfn7e7TGieeoyo-q-4vw)
 
-- Vue 
+- Vue 2
   - [Vue Introduction](https://hackmd.io/cXf2Y39zQ-Kv8sqnYBi_zw)
   - [Vue instance](https://hackmd.io/6N65rm0KTTGk_y_1QhfCeA)
   - [Vue 템플릿 신택스](https://hackmd.io/a1iRCJuuT0-pDC52yjVP2w)
@@ -32,6 +41,7 @@
   - [컴포넌트](https://hackmd.io/EfHf4_1jQdq09gp2lOkQ-w)
   - [Runtime + Compiler vs Runtime-only](https://hackmd.io/5hF0zrqLSVS9lIYH_Za2Mw)
   - [Vue Lifecycle & Lifecycle Method](https://hackmd.io/quNH36I6THW43zD_Uck6ow)
+  - [vue2의 반응형 동작 원리 살펴보기](https://hackmd.io/9erUGX79SjO1DLS4TB9LYg?both)
 
 - Vuex 
   - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
@@ -40,12 +50,10 @@
 
 - vue-router
   - [vue-router](https://hackmd.io/u3H7cdiaScyXPiAKhNxLHQ?view)
+  - [데이터 fetching - 데이터는 언제 fetch해야할까?](https://hackmd.io/q5Oi49SES8yRidIUk0P95w)
 
-- 개발 노트
-  - [<엔터가 눌렸을 때, 타이틀 수정하기>에서의 문제와 해결, 리팩토링](https://github.com/yejineee/vue-trello/issues/23)
-  - [props로 객체가 전달될 때, 타입 체크를 더 확실히하는 방법은 없을까](https://github.com/yejineee/vue-trello/issues/25)
-  - [<타이틀 수정 바깥을 클릭했을 때, 수정폼 닫히게 하기>까지의 과정](https://github.com/yejineee/vue-trello/issues/27)
-  - [window.addEventListener와 document.addEventListener의 차이](https://github.com/yejineee/vue-trello/issues/37)
+- About 최적화
+  - [FE 성능 최적화 - especially vue & vuex](https://hackmd.io/t11IT10OQu2dshd0tiG7Vg)
 
 ## 🏃‍♀️ 계획과 실행 
 <details>
@@ -91,6 +99,11 @@
      -  동적 라우팅 적용하기 (/board/:boardId) ✅ 
      -  메인 페이지에서 보드 리스트 보여주기 ✅ 
      -  개발 노트 다듬기 & 링크 추가 ✅ 
+  -  **21.05.12 수**
+     -  vue2 반응형 원리 학습 ✅ 
+     -  vue2에서의 최적화 학습 ✅ 
+  -  **21.05.13 목**
+     -  동적으로 params 바뀜에 따라 columns data fetch ✅ 
 </details>
 
 
