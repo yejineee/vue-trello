@@ -3,8 +3,8 @@
     "id":"wejingd",
     "name":"Lillie"
   },
-  "boards":{
-    "id1":{
+  "boards":[
+    {
       "id": "id1",
       "title":"Trello 1",
       "imageUrl":"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/640x960/d81c37a3fbc40849c2550d0739900950/photo-1592842825197-89dd8efba31f.jpg",
@@ -25,7 +25,7 @@
         }
       ]
     },
-    "id2":{
+    {
       "id": "id2",
       "title":"Trello 2",
       "imageUrl":"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/640x960/4fceeeb743aab5d627320fb9e4957bda/photo-1553026908-8e014ad0e410.jpg",
@@ -46,7 +46,7 @@
         }
       ]
     },
-    "id3":{
+    {
       "id": "id3",
       "title":"Trello 3",
       "imageUrl":"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/600x960/c856407ecbc8e664dcb6abe43e47985b/photo-1584623370926-c7340abbe232.jpg",
@@ -67,7 +67,7 @@
         }
       ]
     },
-    "id4":{
+    {
       "id": "id4",
       "title":"Trello 4",
       "imageUrl":"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/639x960/1e7cb1a29cc71659a0a6917b1dd142c2/photo-1595369395498-a0084400e046.jpg",
@@ -88,7 +88,7 @@
         }
       ]
     },
-    "id5":{
+    {
       "id": "id5",
       "title":"Trello 5",
       "imageUrl":"https://trello-backgrounds.s3.amazonaws.com/SharedBackground/480x320/62d0cfadfa00f39378cb8cedd58d0ebc/photo-1540354600717-b44cd1870b4e.jpg",
@@ -109,6 +109,5 @@
         }
       ]
     }
-  }
-
+  ]
 }
