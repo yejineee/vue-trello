@@ -4,6 +4,3 @@ export const FETCH_BOARDS = 'FETCH_BOARDS';
 
 // mutation
 export const MUTATE_BOARDS = 'MUTATE_BOARDS';
-
-// getters
-export const boardList = 'boardList';

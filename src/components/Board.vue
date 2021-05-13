@@ -25,11 +25,20 @@ export default {
   computed: {
     ...mapState(COLUMN_STORE_NAME, ['columns'])
   },
+  watch: {
+    $route(to) {
+      this.fetchColumnsByBoardId(to);
+    }
+  },
   created() {
-    this.fetchColumns();
+    this.fetchColumnsByBoardId();
   },
   methods: {
-    ...mapActions(COLUMN_STORE_NAME, { fetchColumns: FETCH_COLUMNS })
+    ...mapActions(COLUMN_STORE_NAME, { fetchColumns: FETCH_COLUMNS }),
+    fetchColumnsByBoardId(route = this.$route) {
+      const { boardId } = route.params;
+      this.fetchColumns({ boardId });
+    }
   }
 };
 </script>

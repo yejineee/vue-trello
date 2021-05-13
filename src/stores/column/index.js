@@ -11,11 +11,17 @@ import {
 const columnModule = {
   namespaced: true,
   state: () => ({
+    boardId: null,
+    title: null,
+    imageUrl: null,
     columns: []
   }),
   mutations: {
-    [MUTATE_COLUMNS](state, { data }) {
-      state.columns = data;
+    [MUTATE_COLUMNS](state, { data: { id, title, imageUrl, columns } }) {
+      state.boardId = id;
+      state.title = title;
+      state.imageUrl = imageUrl;
+      state.columns = columns;
     },
     [MUTATE_ADD_COLUMN](state, { newColumn }) {
       state.columns = [...state.columns, newColumn];
@@ -25,8 +31,8 @@ const columnModule = {
     }
   },
   actions: {
-    async [FETCH_COLUMNS]({ commit }) {
-      commit(MUTATE_COLUMNS, { data: await getColumns() });
+    async [FETCH_COLUMNS]({ commit }, { boardId }) {
+      commit(MUTATE_COLUMNS, { data: await getColumns(boardId) });
     },
     async [CREATE_COLUMN]({ commit }, title) {
       const newColumn = await createNewColumn({
