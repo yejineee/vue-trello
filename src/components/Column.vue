@@ -1,5 +1,10 @@
 <template>
-  <div :data-column-id="column.id" class="column" draggable="true">
+  <div
+    class="column"
+    v-bind="draggableDataSet"
+    :style="styleObj"
+    draggable="true"
+  >
     <ColumnEditForm
       v-if="showEditForm"
       :id="column.id"
@@ -51,63 +56,23 @@ export default Vue.extend({
         this.updatedTitle.length >= this.minTitle &&
         this.updatedTitle.length <= this.maxTitle
       );
+    },
+    draggableDataSet() {
+      return {
+        [`data-${this.DRAGGABLE_ID_KEY}`]: this.column.id
+      };
     }
-  },
-  mounted() {
-    const dragStartHandler = function(e) {
-      const origOpacity = this.style.opacity;
-      e.dataTransfer.setData('text/plain', this.dataset.columnId);
-      e.dataTransfer.setData('text/html', this.innerHTML);
-      e.dataTransfer.setData('origOpacity', origOpacity);
-      e.dataTransfer.effectAllowed = 'move';
-      this.style.opacity = '0.4';
-    };
-    const dragEnterHandler = function(e) {
-      e.preventDefault();
-      this.classList.add('drop-target-over');
-    };
-    const dragOverHandler = e => {
-      e.preventDefault();
-      e.dataTransfer.dropEffect = 'move';
-    };
-    const dragLeaveHandler = function() {
-      this.classList.remove('drop-target-over');
-    };
-    const dropHandler = function(e) {
-      e.preventDefault();
-      this.classList.remove('drop-target-over');
-      const srcColId = e.dataTransfer.getData('text/plain');
-      const destColId = this.dataset.columnId;
-      if (srcColId !== destColId) {
-        const srcElem = document.querySelector(`[data-column-id=${srcColId}`);
-        srcElem.innerHTML = this.innerHTML;
-        this.innerHTML = e.dataTransfer.getData('text/html');
-      }
-    };
-    const dragEndHandler = function(e) {
-      this.style.opacity = e.dataTransfer.getData('origOpacity');
-    };
-    this.$el.addEventListener('dragstart', dragStartHandler);
-    this.$el.addEventListener('dragenter', dragEnterHandler);
-    this.$el.addEventListener('dragover', dragOverHandler);
-    this.$el.addEventListener('dragleave', dragLeaveHandler);
-    this.$el.addEventListener('drop', dropHandler);
-    this.$el.addEventListener('dragend', dragEndHandler);
   },
   methods: {
     toggleEditTitleForm() {
       this.showEditForm = this.showEditForm !== true;
     }
   }
-};
+});
 </script>
 <style lang="scss">
 @import 'src/style/mixin.scss';
 @import 'src/style/variable.scss';
-
-.drop-target-over {
-  border: 0.3rem dashed gray;
-}
 
 .column {
   @include round-box;
