@@ -13,13 +13,16 @@
   </div>
 </template>
 <script>
+import Vue from 'vue';
+import dragAndDropMixin from 'src/mixins/DragAndDrop';
 import { MAX_TITLE_LENGTH, MIN_TITLE_LENGTH } from 'src/constants/title';
 import ColumnEditForm from './ColumnEditForm.vue';
 
-export default {
+export default Vue.extend({
   components: {
     ColumnEditForm
   },
+  mixins: [dragAndDropMixin],
   props: {
     column: {
       type: Object,
