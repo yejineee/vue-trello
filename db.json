@@ -22,6 +22,20 @@
               "authorId":"wejingd"
             }
           ]
+        },
+        { 
+          "id":"dfnjeaksfnjksdfnsdkjfk",
+          "title":"In Progress",
+          "createdAt":"Mon May 01 2021 11:12:42 GMT+0900 (대한민국 표준시)",
+          "cards":[
+          ]
+        },
+        { 
+          "id":"skdlfsjdfhdjkhfksd",
+          "title":"Done",
+          "createdAt":"Mon May 01 2021 11:14:42 GMT+0900 (대한민국 표준시)",
+          "cards":[
+          ]
         }
       ]
     },
