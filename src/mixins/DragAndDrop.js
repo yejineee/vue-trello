@@ -50,7 +50,7 @@ export default {
       const { target } = e;
       this.isDropTarget = false;
       const srcId = e.dataTransfer.getData(dataType.SRC_ID);
-      const destId = target.dataset.id;
+      const destId = target.dataset[DRAGGABLE_ID_KEY];
       if (srcId === destId) {
         return;
       }
