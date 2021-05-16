@@ -24,7 +24,7 @@
 - [<타이틀 수정 바깥을 클릭했을 때, 수정폼 닫히게 하기>까지의 과정](https://github.com/yejineee/vue-trello/issues/27)
 - [window.addEventListener와 document.addEventListener의 차이](https://github.com/yejineee/vue-trello/issues/37)
 - [동적으로 url의 boardId가 변경됨에 따라 데이터 fetch해오기](https://github.com/yejineee/vue-trello/issues/49)
-
+- [drag and drop Mixin 만들어서 컴포넌트에 적용하기](https://github.com/yejineee/vue-trello/issues/53)
 
 
 ## 📗 학습 정리
@@ -32,6 +32,7 @@
 - [eslint, prettier 설정](https://github.com/yejineee/vue-trello/blob/master/docs/eslint-prettier.md)
 - [CSR vs SSR](https://hackmd.io/KQkXXyeDSBeNR8znd2Ok9Q)
 - [HTML5, CSS3, Sass](https://hackmd.io/CsQfn7e7TGieeoyo-q-4vw)
+- [HTML drag and drop API](https://hackmd.io/mYUmBIERTneQ1nM-iGtkdg)
 
 - Vue 2
   - [Vue Introduction](https://hackmd.io/cXf2Y39zQ-Kv8sqnYBi_zw)
@@ -42,6 +43,8 @@
   - [Runtime + Compiler vs Runtime-only](https://hackmd.io/5hF0zrqLSVS9lIYH_Za2Mw)
   - [Vue Lifecycle & Lifecycle Method](https://hackmd.io/quNH36I6THW43zD_Uck6ow)
   - [vue2의 반응형 동작 원리 살펴보기](https://hackmd.io/9erUGX79SjO1DLS4TB9LYg?both)
+  - [mixins](https://hackmd.io/V8RzO1U0TCeI1pa4CLORxw)
+  - [plugins & filters](https://hackmd.io/niY2yeUBQ7a44Th4fdyxCQ)
 
 - Vuex 
   - [Vuex 코어 개념 : state, getters](https://hackmd.io/BSRVLv-_RlulY-azXSRr2A)
@@ -103,7 +106,10 @@
      -  vue2 반응형 원리 학습 ✅ 
      -  vue2에서의 최적화 학습 ✅ 
   -  **21.05.13 목**
-     -  동적으로 params 바뀜에 따라 columns data fetch ✅ 
+     -  동적으로 params 바뀜에 따라 columns data fetch ✅
+  -  **21.05.16 금**
+     -  plugin, mixin, filter 학습 ✅
+     -  drag and drop mixin 만들고 컴포넌트에 적용하기 ✅
 </details>
 
 
