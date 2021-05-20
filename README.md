@@ -33,6 +33,9 @@
 - [CSR vs SSR](https://hackmd.io/KQkXXyeDSBeNR8znd2Ok9Q)
 - [HTML5, CSS3, Sass](https://hackmd.io/CsQfn7e7TGieeoyo-q-4vw)
 - [HTML drag and drop API](https://hackmd.io/mYUmBIERTneQ1nM-iGtkdg)
+- [shadow DOM](https://hackmd.io/PUgX5BbkT42W5819-E1Tvg?view)
+- [virtual DOM](https://hackmd.io/LcRaiMoSSTyNOW4llJYmuw)
+
 
 - Vue 2
   - [Vue Introduction](https://hackmd.io/cXf2Y39zQ-Kv8sqnYBi_zw)
